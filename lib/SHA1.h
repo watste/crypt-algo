@@ -1,33 +1,35 @@
 /*********************************************************************
-* Filename:   md2.h
+* Filename:   SHA1.h
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
-* Details:    Defines the API for the corresponding MD2 implementation.
+* Details:    Defines the API for the corresponding SHA1 implementation.
 *********************************************************************/
 
-#ifndef MD2_H
-#define MD2_H
+#ifndef SHA1_H
+#define SHA1_H
 
 /*************************** HEADER FILES ***************************/
 #include <stddef.h>
 
 /****************************** MACROS ******************************/
-#define MD2_BLOCK_SIZE 16
+#define SHA1_BLOCK_SIZE 20              // SHA1 outputs a 20 byte digest
 
 /**************************** DATA TYPES ****************************/
 typedef unsigned char BYTE;             // 8-bit byte
+typedef unsigned int  WORD;             // 32-bit word, change to "long" for 16-bit machines
 
 typedef struct {
-   BYTE data[16];
-   BYTE state[48];
-   BYTE checksum[16];
-   int len;
-} MD2_CTX;
+	BYTE data[64];
+	WORD datalen;
+	unsigned long long bitlen;
+	WORD state[5];
+	WORD k[4];
+} SHA1_CTX;
 
 /*********************** FUNCTION DECLARATIONS **********************/
-void md2_init(MD2_CTX *ctx);
-void md2_update(MD2_CTX *ctx, const BYTE data[], size_t len);
-void md2_final(MD2_CTX *ctx, BYTE hash[]);   // size of hash must be MD2_BLOCK_SIZE
+void sha1_init(SHA1_CTX *ctx);
+void sha1_update(SHA1_CTX *ctx, const BYTE data[], size_t len);
+void sha1_final(SHA1_CTX *ctx, BYTE hash[]);
 
-#endif   // MD2_H
+#endif   // SHA1_H

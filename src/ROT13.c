@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   rot-13.c
+* Filename:   ROT13.c
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
@@ -11,7 +11,7 @@
 
 /*************************** HEADER FILES ***************************/
 #include <string.h>
-#include "rot-13.h"
+#include "lib/ROT13.h"
 
 /*********************** FUNCTION DEFINITIONS ***********************/
 void rot13(char str[])

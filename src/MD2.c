@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   md2.c
+* Filename:   MD2.c
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
@@ -12,7 +12,7 @@
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
 #include <memory.h>
-#include "md2.h"
+#include "lib/MD2.h"
 
 /**************************** VARIABLES *****************************/
 static const BYTE s[256] = {

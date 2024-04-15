@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   base64.c
+* Filename:   BASE64.c
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
@@ -8,7 +8,7 @@
 
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
-#include "base64.h"
+#include "lib/BASE64.h"
 
 /****************************** MACROS ******************************/
 #define NEWLINE_INVL 76

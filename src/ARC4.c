@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   arcfour.c
+* Filename:   ARC4.c
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
@@ -10,7 +10,7 @@
 
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
-#include "arcfour.h"
+#include "lib/ARC4.h"
 
 /*********************** FUNCTION DEFINITIONS ***********************/
 void arcfour_key_setup(BYTE state[], const BYTE key[], int len)

@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   arcfour.h
+* Filename:   ARC4.h
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.

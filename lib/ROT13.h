@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   rot-13.h
+* Filename:   ROT13.h
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.

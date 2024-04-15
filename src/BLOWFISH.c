@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   blowfish.c
+* Filename:   BLOWFISH.c
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
@@ -12,7 +12,7 @@
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
 #include <memory.h>
-#include "blowfish.h"
+#include "lib/BLOWFISH.h"
 
 /****************************** MACROS ******************************/
 #define F(x,t) t = keystruct->s[0][(x) >> 24]; \

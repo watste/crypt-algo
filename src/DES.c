@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   des.c
+* Filename:   DES.c
 * Author:     Brad Conte (brad AT radconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
@@ -12,7 +12,7 @@
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
 #include <memory.h>
-#include "des.h"
+#include "lib/DES.h"
 
 /****************************** MACROS ******************************/
 // Obtain bit "b" from the left and shift it "c" places from the right

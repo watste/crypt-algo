@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   aes.h
+* Filename:   AES.h
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
@@ -110,14 +110,5 @@ int aes_decrypt_ccm(const BYTE ciphertext[],             // IN  - Ciphertext, th
                     int *mac_auth,                       // OUT - TRUE if authentication succeeded, FALSE if it did not. NULL pointer will ignore the authentication.
                     const BYTE key[],                    // IN  - The AES key for decryption.
                     int keysize);                        // IN  - The length of the key in BITS. Valid values are 128, 192, 256.
-
-///////////////////
-// Test functions
-///////////////////
-int aes_test();
-int aes_ecb_test();
-int aes_cbc_test();
-int aes_ctr_test();
-int aes_ccm_test();
 
 #endif   // AES_H

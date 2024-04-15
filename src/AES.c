@@ -1,5 +1,5 @@
 /*********************************************************************
-* Filename:   aes.c
+* Filename:   AES.c
 * Author:     Brad Conte (brad AT bradconte.com)
 * Copyright:
 * Disclaimer: This code is presented "as is" without any guarantees.
@@ -18,7 +18,7 @@
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
 #include <memory.h>
-#include "aes.h"
+#include "lib/AES.h"
 
 #include <stdio.h>
 
