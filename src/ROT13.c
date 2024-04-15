@@ -11,7 +11,7 @@
 
 /*************************** HEADER FILES ***************************/
 #include <string.h>
-#include "lib/ROT13.h"
+#include "../lib/ROT13.h"
 
 /*********************** FUNCTION DEFINITIONS ***********************/
 void rot13(char str[])

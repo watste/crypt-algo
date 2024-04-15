@@ -18,7 +18,7 @@
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
 #include <memory.h>
-#include "lib/AES.h"
+#include "../lib/AES.h"
 
 #include <stdio.h>
 

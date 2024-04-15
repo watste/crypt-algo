@@ -12,7 +12,7 @@
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
 #include <memory.h>
-#include "lib/DES.h"
+#include "../lib/DES.h"
 
 /****************************** MACROS ******************************/
 // Obtain bit "b" from the left and shift it "c" places from the right
@@ -251,12 +251,12 @@ void three_des_key_setup(const BYTE key[], BYTE schedule[][16][6], DES_MODE mode
 {
 	if (mode == DES_ENCRYPT) {
 		des_key_setup(&key[0],schedule[0],mode);
-		des_key_setup(&key[8],schedule[1],!mode);
+		des_key_setup(&key[8],schedule[1],mode);
 		des_key_setup(&key[16],schedule[2],mode);
 	}
 	else /*if (mode == DES_DECRYPT*/ {
 		des_key_setup(&key[16],schedule[0],mode);
-		des_key_setup(&key[8],schedule[1],!mode);
+		des_key_setup(&key[8],schedule[1],mode);
 		des_key_setup(&key[0],schedule[2],mode);
 	}
 }

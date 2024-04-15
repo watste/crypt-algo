@@ -12,7 +12,7 @@
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
 #include <memory.h>
-#include "lib/MD2.h"
+#include "../lib/MD2.h"
 
 /**************************** VARIABLES *****************************/
 static const BYTE s[256] = {

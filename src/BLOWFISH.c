@@ -12,7 +12,7 @@
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
 #include <memory.h>
-#include "lib/BLOWFISH.h"
+#include "../lib/BLOWFISH.h"
 
 /****************************** MACROS ******************************/
 #define F(x,t) t = keystruct->s[0][(x) >> 24]; \

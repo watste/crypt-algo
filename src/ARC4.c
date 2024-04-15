@@ -10,7 +10,7 @@
 
 /*************************** HEADER FILES ***************************/
 #include <stdlib.h>
-#include "lib/ARC4.h"
+#include "../lib/ARC4.h"
 
 /*********************** FUNCTION DEFINITIONS ***********************/
 void arcfour_key_setup(BYTE state[], const BYTE key[], int len)
